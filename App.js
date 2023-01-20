@@ -77,12 +77,12 @@ console.log(myQuestions)
           numCorrect++;
   
           // color the answers green
-          // answerContainers[questionNumber].style.color = 'lightgreen';
+          answerContainers[questionNumber].style.color = 'lightgreen';
         }
         // if answer is wrong or blank
         else{
           // color the answers red
-          // answerContainers[questionNumber].style.color = 'red';
+          answerContainers[questionNumber].style.color = 'red';
         }
       });
   
@@ -173,7 +173,7 @@ let x = setInterval(function() {
     clearInterval(x);
     let Pop = document.querySelector(".Pop")
     Pop.style.display = "flex"
-    document.getElementById("Information").innerHTML = "Almost There 🤯🤯🥺 b"
+    document.getElementById("Information").innerHTML = "Time up 🤯🤯🥺 " + userdata
     let SubRetry = document.querySelector(".SubRetry")
     SubRetry.style.display = "flex"
     SubRetry.onclick = ()=>{

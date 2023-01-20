@@ -75,7 +75,7 @@ const myQuestions = [
         c: "default application for that file type",
         d: "Control Panel"
       },
-      correctAnswer: "c"
+      correctAnswer: "b"
     },
     {
       question:"True or False: You can only have one user account on a Windows computer.",
