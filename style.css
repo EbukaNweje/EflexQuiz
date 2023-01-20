@@ -1,0 +1,225 @@
+body{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #333;
+    background-color: rgba(211, 211, 211, 0.368);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  header {
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  nav > button {
+    padding: 15px 25px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .section {
+    height: fit-content;
+    width: 70%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .questionbody {
+    width: 100%;
+    height: 150px;
+    /* background-color: yellow; */
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+  
+  .Question {
+    width: 100%;
+    display: flex;
+  }
+  
+  .Question > h3 {
+    width: 80%;
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .Question > h2 {
+      width: 30px;
+    font-size: 18px;
+    font-weight: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .options {
+    width: 80%;
+    height: 100px;
+    margin-left: 70px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .options > p {
+    font-size: 18px;
+    font-weight: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .AnswerRight {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: green;
+  }
+  
+  .AnswerWrong {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: red;
+  }
+  
+  .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .submit > button {
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: #000;
+    transition: all 350ms;
+    transform: scale(1);
+  }
+  
+  .submit > button:hover {
+  box-shadow: 0px 0px 5px black;
+  transform: scale(1.02);
+  }
+
+/* copied codes */
+  .question{
+    font-weight: 600;
+  }
+  .answers {
+      margin-bottom: 20px;
+  }
+  #submit, .SubRetry, .SubOk{
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: #297;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin: 20px 0px;
+  }
+  #submit:hover{
+    background-color: #3a8;
+  }
+
+.Pop {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.779);
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card {
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hideOk, .hideRetry {
+    display: none;
+}
+
+
+.MainBody {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.MainBody h2 {
+  font-size: 30px;
+}
+
+.MainBody input {
+  width: 50%;
+  height: 40px;
+  padding-left: 20px;
+  outline: none;
+  margin-bottom: 4px;
+  margin-top: 20px;
+}
+
+.MainBody p {
+  font-size: 15px;
+  color: red;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.MainBody button {
+  width: 10%;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  border-radius: 3px;
+}
